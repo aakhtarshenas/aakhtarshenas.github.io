@@ -1,0 +1,35 @@
+[
+  {
+    "year": 2026,
+    "title": "Practical Angle-of-Arrival Estimation Using 5G Sounding Reference Signals",
+    "authors": "A. Akhtarshenas, D. Gómez-Barquero, N. Cardona",
+    "venue": "IEEE Transactions on Wireless Communications (example entry — replace with your real publication)",
+    "topics": ["Signal Processing", "Wireless Communications"],
+    "pdf": "",
+    "code": "https://github.com/azimakhtarshenas",
+    "bibtex": "",
+    "doi": ""
+  },
+  {
+    "year": 2025,
+    "title": "Multi-Agent Reinforcement Learning for Resource Allocation in Dense 5G Networks",
+    "authors": "A. Akhtarshenas, et al.",
+    "venue": "IEEE International Conference on Communications (ICC) — example entry",
+    "topics": ["AI & RL", "Wireless Communications"],
+    "pdf": "",
+    "code": "",
+    "bibtex": "",
+    "doi": ""
+  },
+  {
+    "year": 2024,
+    "title": "Sparse Recovery Priors for Deep Learning-Based Image Reconstruction",
+    "authors": "A. Akhtarshenas, et al.",
+    "venue": "IEEE Transactions on Computational Imaging — example entry",
+    "topics": ["Computational Imaging"],
+    "pdf": "",
+    "code": "",
+    "bibtex": "",
+    "doi": ""
+  }
+]
