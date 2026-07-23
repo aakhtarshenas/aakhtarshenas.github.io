@@ -473,6 +473,37 @@ html[data-theme="dark"] .hero-art { opacity: 0.16; }
   border-top: 1px solid var(--hairline);
 }
 .chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+
+/* ---------- GIF gallery page ---------- */
+.gif-pair { margin-bottom: 40px; }
+.gif-pair h2 { font-size: 1.15rem; margin-bottom: 12px; }
+.gif-pair-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 640px) { .gif-pair-row { grid-template-columns: 1fr; } }
+.gif-pair-row figure {
+  margin: 0;
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg-sunken);
+}
+.gif-pair-row img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--bg-sunken);
+}
+.gif-pair-row figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  text-align: center;
+  padding: 8px 4px;
+  border-top: 1px solid var(--hairline);
+}
 .chip {
   font-family: var(--font-mono); font-size: 0.72rem;
   color: var(--blue-deep); background: var(--blue-wash);
