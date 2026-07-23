@@ -70,22 +70,44 @@
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card project-card--wide">
         <div class="project-media">
-          <img src="assets/img/projects/rl.jpg" alt="Deep RL for wireless networks" onerror="this.parentElement.textContent='project photo'; this.remove();" />
+          <img src="assets/img/projects/drl-gifs/untrained.gif" alt="Untrained UAV-BS policy — random, uncoordinated movement" onerror="this.parentElement.textContent='untrained agent GIF'; this.remove();" />
         </div>
         <div class="project-body">
           <h3>Deep Reinforcement Learning for Wireless Networks</h3>
           <div class="chip-row">
             <span class="chip">PPO</span>
             <span class="chip">TD3</span>
-            <span class="chip">Resource allocation</span>
-            <span class="chip">Scheduling</span>
+            <span class="chip">Multi-UAV-BS positioning</span>
+            <span class="chip">Disaster response</span>
           </div>
-          <p>Policy-gradient and actor-critic agents for scheduling and resource-allocation decisions
-            in simulated multi-cell wireless networks, benchmarked against classical heuristics.</p>
-          <div class="btn-row" style="margin-top:0;">
-            <a class="btn" href="https://github.com/aakhtarshenas" target="_blank" rel="noopener">Code</a>
+          <p>A centralized PPO agent learns to position multiple UAV base stations in real time,
+            using only radio-sensing measurements (no GPS), to keep ground users connected as they
+            move. The GIF above shows an untrained policy — the trained agent below generalizes
+            across four user-mobility patterns.</p>
+
+          <div class="gif-grid">
+            <figure>
+              <img src="assets/img/projects/drl-gifs/trained-circular.gif" alt="Trained agent under circular user motion" onerror="this.parentElement.querySelector('figcaption').textContent += ' (add trained-circular.gif)'; this.remove();" />
+              <figcaption>Trained — circular motion</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/projects/drl-gifs/trained-linear.gif" alt="Trained agent under straight-line user motion" onerror="this.parentElement.querySelector('figcaption').textContent += ' (add trained-linear.gif)'; this.remove();" />
+              <figcaption>Trained — straight motion</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/projects/drl-gifs/trained-cosine.gif" alt="Trained agent under cosine-pattern user motion" onerror="this.parentElement.querySelector('figcaption').textContent += ' (add trained-cosine.gif)'; this.remove();" />
+              <figcaption>Trained — cosine motion</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/projects/drl-gifs/trained-composite.gif" alt="Trained agent under composite user motion" onerror="this.parentElement.querySelector('figcaption').textContent += ' (add trained-composite.gif)'; this.remove();" />
+              <figcaption>Trained — composite motion</figcaption>
+            </figure>
+          </div>
+
+          <div class="btn-row" style="margin-top:16px;">
+            <a class="btn" href="https://github.com/aakhtarshenas/centralized-ppo-multi-uav-bs" target="_blank" rel="noopener">Code</a>
             <a class="btn" href="publications.html">Paper</a>
           </div>
         </div>
