@@ -40,6 +40,41 @@
 <main class="container">
 
   <section class="hero">
+    <svg class="hero-art" viewBox="0 0 800 460" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
+      <!-- signal arcs broadcasting from the drone -->
+      <g fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M560 120 a90 90 0 0 1 0 180" opacity="0.5"/>
+        <path d="M560 90 a120 120 0 0 1 0 240" opacity="0.35"/>
+        <path d="M560 60 a150 150 0 0 1 0 300" opacity="0.22"/>
+      </g>
+      <!-- quadcopter -->
+      <g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round">
+        <rect x="535" y="200" width="50" height="20" rx="5"/>
+        <line x1="535" y1="205" x2="490" y2="170"/>
+        <line x1="585" y1="205" x2="630" y2="170"/>
+        <line x1="535" y1="220" x2="490" y2="255"/>
+        <line x1="585" y1="220" x2="630" y2="255"/>
+        <circle cx="482" cy="163" r="14"/>
+        <circle cx="638" cy="163" r="14"/>
+        <circle cx="482" cy="262" r="14"/>
+        <circle cx="638" cy="262" r="14"/>
+      </g>
+      <!-- multi-UAV / network graph nodes echoing the multi-agent coordination work -->
+      <g fill="currentColor" opacity="0.5">
+        <circle cx="150" cy="360" r="5"/>
+        <circle cx="260" cy="400" r="5"/>
+        <circle cx="330" cy="330" r="5"/>
+        <circle cx="420" cy="390" r="5"/>
+        <circle cx="200" cy="300" r="5"/>
+      </g>
+      <g fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.32">
+        <line x1="150" y1="360" x2="260" y2="400"/>
+        <line x1="260" y1="400" x2="330" y2="330"/>
+        <line x1="330" y1="330" x2="420" y2="390"/>
+        <line x1="200" y1="300" x2="330" y2="330"/>
+        <line x1="200" y1="300" x2="150" y2="360"/>
+      </g>
+    </svg>
     <div class="hero-grid">
       <img class="hero-photo" src="assets/img/profile.jpg" alt="Portrait of Azim Akhtarshenas" />
       <div>
@@ -74,18 +109,20 @@
   <section class="section">
     <div class="bio">
       <p>
-        I am a PhD candidate in Electrical Engineering and Communication Networks at the
+        I am a final-year PhD candidate in Electrical Engineering and Communication Networks at the
         <a href="https://www.upv.es" target="_blank" rel="noopener">Universitat Politècnica de València (UPV)</a>,
         working at the iTEAM Research Institute under the supervision of
         <a href="mailto:d.lopez@iteam.upv.es">Dr. David López-Pérez</a>.
       </p>
       <p>
-        My PhD research focuses on the integration of terrestrial and non-terrestrial networks — UAVs
-        and HAPS — for aerial and ground wireless connectivity, using deep reinforcement learning
-        (PPO, TD3) for base-station positioning and trajectory optimization in disaster-response and
-        maritime scenarios. More broadly, I work across artificial intelligence and machine learning
-        (federated learning, autoencoders, large language models) and wireless communications
-        (MIMO systems, 5G/6G, SINR estimation).
+        My PhD develops deep reinforcement learning (PPO, TD3) for positioning and trajectory
+        optimization of UAV and HAPS base stations, including a GPS-free, radio-sensing framework
+        that coordinates multiple UAV base stations in disaster-response networks — where GPS and
+        terrestrial infrastructure may be unavailable — using only angle-of-arrival and signal-quality
+        measurements from the ground users it serves. More broadly, I work across artificial
+        intelligence and machine learning (federated learning, autoencoders, large language models)
+        and wireless communications (MIMO, 5G/6G, SINR estimation), and I'm increasingly drawn to
+        taking reinforcement learning out of simulation and into real autonomous systems.
       </p>
     </div>
   </section>

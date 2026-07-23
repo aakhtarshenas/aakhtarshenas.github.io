@@ -216,6 +216,25 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: inline-block; }
 /* ---------- Hero (home) ---------- */
 .hero {
   padding: 72px 0 40px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-art {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  width: min(58vw, 760px);
+  height: auto;
+  color: var(--blue);
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+html[data-theme="dark"] .hero-art { opacity: 0.16; }
+.hero-grid {
+  position: relative;
+  z-index: 1;
 }
 .hero-grid {
   display: grid;
@@ -274,6 +293,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: inline-block; }
   .hero-photo { width: 160px; height: 160px; margin: 0 auto; }
   .tag-row, .btn-row { justify-content: center; }
   .hero h1 { font-size: 2rem; }
+  .hero-art { display: none; }
 }
 
 /* ---------- Buttons ---------- */
