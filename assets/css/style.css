@@ -485,6 +485,7 @@ html[data-theme="dark"] .hero-art { opacity: 0.16; }
 }
 .project-media img { width: 100%; height: 100%; object-fit: cover; }
 .project-media--square { aspect-ratio: 1/1; }
+.project-media--screenshot { aspect-ratio: 992/396; }
 .project-body { padding: 20px 22px 22px; }
 .project-body h3 { font-size: 1.08rem; margin-bottom: 8px; }
 .project-body p { font-size: 0.92rem; margin-bottom: 12px; }
