@@ -4,20 +4,26 @@
    ========================================================================== */
 
 :root {
-  /* -- palette (light) -- */
+  /* -- palette (light) — dusty plum, rose, sage -- */
   --bg: #ffffff;
-  --bg-raised: #f7f9fc;
-  --bg-sunken: #eef2f8;
-  --ink: #182233;
-  --ink-soft: #4b5568;
-  --ink-faint: #8a93a3;
-  --hairline: #e2e7ef;
-  --blue: #1e4d8b;
-  --blue-deep: #123162;
-  --blue-soft: #4d7fc1;
-  --blue-wash: #eaf1fb;
-  --accent-line: #1e4d8b;
-  --shadow: 0 1px 2px rgba(18, 34, 71, 0.06), 0 8px 24px rgba(18, 34, 71, 0.06);
+  --bg-raised: #faf8fa;
+  --bg-sunken: #f3eef2;
+  --ink: #241f28;
+  --ink-soft: #5c5560;
+  --ink-faint: #928a94;
+  --hairline: #e8e0e6;
+  --blue: #5e4060;
+  --blue-deep: #40293f;
+  --blue-soft: #8a6b8c;
+  --blue-wash: #f1e6f0;
+  --accent-line: #5e4060;
+  --rose: #8c4a58;
+  --rose-deep: #6b3540;
+  --rose-wash: #f7e7ea;
+  --sage: #47654a;
+  --sage-deep: #324a34;
+  --sage-wash: #e9efe6;
+  --shadow: 0 1px 2px rgba(64, 41, 63, 0.07), 0 8px 24px rgba(64, 41, 63, 0.07);
 
   /* -- type -- */
   --font-display: "Source Serif 4", "Iowan Old Style", Georgia, serif;
@@ -29,18 +35,24 @@
 }
 
 html[data-theme="dark"] {
-  --bg: #0f1621;
-  --bg-raised: #161f2e;
-  --bg-sunken: #0a101a;
-  --ink: #e8ecf3;
-  --ink-soft: #aab3c4;
-  --ink-faint: #6b7484;
-  --hairline: #253046;
-  --blue: #5f97e0;
-  --blue-deep: #8fb8ec;
-  --blue-soft: #3d6bab;
-  --blue-wash: #142236;
-  --accent-line: #5f97e0;
+  --bg: #17131a;
+  --bg-raised: #1f1922;
+  --bg-sunken: #120e15;
+  --ink: #f1eaf0;
+  --ink-soft: #cabec8;
+  --ink-faint: #8c7f8a;
+  --hairline: #362e37;
+  --blue: #d3a8d6;
+  --blue-deep: #e6cae8;
+  --blue-soft: #ab84ac;
+  --blue-wash: #2c2130;
+  --accent-line: #d3a8d6;
+  --rose: #d99aa5;
+  --rose-deep: #e8bcc4;
+  --rose-wash: #302127;
+  --sage: #9dc2a0;
+  --sage-deep: #c1ddc3;
+  --sage-wash: #1b2a1e;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
@@ -101,9 +113,9 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 .waveform-divider path {
   fill: none;
-  stroke: var(--accent-line);
+  stroke: url(#waveform-gradient);
   stroke-width: 1.4;
-  opacity: 0.55;
+  opacity: 0.7;
 }
 
 /* ---------- Header / nav ---------- */
@@ -287,6 +299,8 @@ html[data-theme="dark"] .hero-art { opacity: 0.16; }
   padding: 4px 10px;
   border-radius: 999px;
 }
+.tag-row .tag:nth-child(3n+2) { color: var(--rose-deep); background: var(--rose-wash); }
+.tag-row .tag:nth-child(3n+3) { color: var(--sage-deep); background: var(--sage-wash); }
 
 @media (max-width: 700px) {
   .hero-grid { grid-template-columns: 1fr; text-align: center; }
@@ -367,6 +381,8 @@ html[data-theme="dark"] .hero-art { opacity: 0.16; }
   padding: 4px 9px;
   border-radius: 4px;
 }
+.card ul li:nth-child(3n+2) { color: var(--rose-deep); background: var(--rose-wash); }
+.card ul li:nth-child(3n+3) { color: var(--sage-deep); background: var(--sage-wash); }
 
 /* ---------- Publications ---------- */
 .pub-filter {
@@ -510,6 +526,8 @@ html[data-theme="dark"] .hero-art { opacity: 0.16; }
   border: 1px solid var(--hairline);
   padding: 3px 8px; border-radius: 4px;
 }
+.chip-row .chip:nth-child(3n+2) { color: var(--rose-deep); background: var(--rose-wash); }
+.chip-row .chip:nth-child(3n+3) { color: var(--sage-deep); background: var(--sage-wash); }
 
 /* ---------- News ---------- */
 .news-list { position: relative; }

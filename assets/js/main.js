@@ -53,7 +53,15 @@ function renderWaveforms() {
     }
     el.setAttribute("viewBox", `0 0 ${w} ${h}`);
     el.setAttribute("preserveAspectRatio", "none");
-    el.innerHTML = `<path d="${d}"></path>`;
+    el.innerHTML = `
+      <defs>
+        <linearGradient id="waveform-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="var(--blue)"></stop>
+          <stop offset="50%" stop-color="var(--rose)"></stop>
+          <stop offset="100%" stop-color="var(--sage)"></stop>
+        </linearGradient>
+      </defs>
+      <path d="${d}"></path>`;
   });
 }
 document.addEventListener("DOMContentLoaded", renderWaveforms);
