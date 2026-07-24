@@ -5,7 +5,7 @@
     "authors": "Akhtarshenas, A., Vahedifar, M. A., Ayoobi, N., Maham, B., Alizadeh, T., Ebrahimi, S., López-Pérez, D.",
     "venue": "Computer Communications, 228, 107964",
     "topics": ["Journal", "AI & Machine Learning"],
-    "pdf": "https://arxiv.org/abs/2310.05269", "code": "", "bibtex": "", "doi": "https://doi.org/10.1016/j.comcom.2024.107964"
+    "pdf": "", "code": "", "bibtex": "", "doi": "https://www.sciencedirect.com/science/article/pii/S0140366424003116"
   },
   {
     "year": 2022,
@@ -13,7 +13,7 @@
     "authors": "Akhtarshenas, A., Toosi, R.",
     "venue": "SN Applied Sciences, 4(8), 229",
     "topics": ["Journal", "AI & Machine Learning"],
-    "pdf": "https://doi.org/10.1007/s42452-022-05105-w", "code": "", "bibtex": "", "doi": "https://doi.org/10.1007/s42452-022-05105-w"
+    "pdf": "", "code": "", "bibtex": "", "doi": "https://link.springer.com/article/10.1007/s42452-022-05105-w"
   },
   {
     "year": 2024,
@@ -21,7 +21,7 @@
     "authors": "Akhtarshenas, A., Ayoobi, N., López-Pérez, D., Toosi, R., Amoozadeh, M.",
     "venue": "IEEE 35th International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC) 2024",
     "topics": ["Conference", "Non-Terrestrial Networks", "Wireless Communications"],
-    "pdf": "https://arxiv.org/abs/2405.16697", "code": "", "bibtex": "", "doi": ""
+    "pdf": "", "code": "", "bibtex": "", "doi": "https://ieeexplore.ieee.org/document/10817279"
   },
   {
     "year": 2024,
@@ -29,7 +29,7 @@
     "authors": "Alizadeh, T., Akhtarshenas, A., Karimi, N., Soleimani, H., Alizadeh, A.",
     "venue": "9th International Conference on Mechatronics Engineering (ICOM) 2024, pp. 76–82",
     "topics": ["Conference"],
-    "pdf": "", "code": "", "bibtex": "", "doi": "https://doi.org/10.1109/ICOM61675.2024.10652410"
+    "pdf": "", "code": "", "bibtex": "", "doi": "https://ieeexplore.ieee.org/document/10652410"
   },
   {
     "year": 2025,
@@ -37,7 +37,7 @@
     "authors": "Akhtarshenas, A., Toosi, R., López-Pérez, D., Alizadeh, T., Hosseini, A.",
     "venue": "Iberian Conference on Pattern Recognition and Image Analysis (IbPRIA) 2025, pp. 309–320",
     "topics": ["Conference", "Non-Terrestrial Networks", "AI & Machine Learning"],
-    "pdf": "https://arxiv.org/abs/2505.10585", "code": "", "bibtex": "", "doi": "https://doi.org/10.1007/978-3-031-99568-2_25"
+    "pdf": "", "code": "", "bibtex": "", "doi": "https://link.springer.com/chapter/10.1007/978-3-031-99568-2_25"
   },
   {
     "year": 2025,
@@ -45,7 +45,7 @@
     "authors": "Vahedifar, M. A., Akhtarshenas, A., RafatPanah, M. M., Sabbaghian, M.",
     "venue": "IEEE 35th International Workshop on Machine Learning for Signal Processing (MLSP) 2025",
     "topics": ["Conference", "AI & Machine Learning"],
-    "pdf": "https://arxiv.org/abs/2312.01991", "code": "", "bibtex": "", "doi": ""
+    "pdf": "", "code": "", "bibtex": "", "doi": "https://ieeexplore.ieee.org/document/11204262"
   },
   {
     "year": 2025,
@@ -53,7 +53,7 @@
     "authors": "Ibáñez, M. R., Akhtarshenas, A., López-Pérez, D., Geraci, G.",
     "venue": "IEEE International Conference on Communications Workshops (ICC Workshops) 2025",
     "topics": ["Conference", "Non-Terrestrial Networks", "Deep Reinforcement Learning"],
-    "pdf": "https://arxiv.org/abs/2504.03961", "code": "", "bibtex": "", "doi": ""
+    "pdf": "", "code": "", "bibtex": "", "doi": "https://ieeexplore.ieee.org/document/11162280"
   },
   {
     "year": 2025,
