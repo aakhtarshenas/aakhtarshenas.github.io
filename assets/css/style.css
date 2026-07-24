@@ -6,8 +6,8 @@
 :root {
   /* -- palette (light) — dusty plum, rose, sage -- */
   --bg: #ffffff;
-  --bg-raised: #faf8fa;
-  --bg-sunken: #f3eef2;
+  --bg-raised: #ffffff;
+  --bg-sunken: #f6f6f6;
   --ink: #241f28;
   --ink-soft: #5c5560;
   --ink-faint: #928a94;
