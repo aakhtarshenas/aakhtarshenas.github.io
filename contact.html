@@ -74,12 +74,36 @@
             <span><a href="https://scholar.google.com/citations?user=5eCLyxwAAAAJ" target="_blank" rel="noopener">Google Scholar</a></span>
           </li>
         </ul>
-      </div>
-      <div>
-        <!-- Replace with the correct embed URL for your building at UPV -->
-        <iframe class="map-frame" title="Map"
+        <iframe class="map-frame" title="Map" style="margin-top:24px;"
           src="https://www.google.com/maps?q=iTEAM%20Universitat%20Polit%C3%A8cnica%20de%20Val%C3%A8ncia&output=embed"
           loading="lazy"></iframe>
+      </div>
+
+      <div>
+        <div class="contact-form-card">
+          <h3>Send a message</h3>
+          <p>Got something to say, or a file to send? Use the form below — only the message is required.</p>
+
+          <!-- Replace YOUR_FORM_ID with your own Formspree form ID (see README for setup) -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+            <label for="cf-name">Your name</label>
+            <input type="text" id="cf-name" name="name" />
+
+            <label for="cf-message">Your message <span class="req">*</span></label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+
+            <label for="cf-email">Your email</label>
+            <input type="email" id="cf-email" name="email" />
+
+            <label for="cf-phone">Your phone</label>
+            <input type="tel" id="cf-phone" name="phone" />
+
+            <label for="cf-file">You can also attach a file</label>
+            <input type="file" id="cf-file" name="attachment" />
+
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:6px;">Send</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>

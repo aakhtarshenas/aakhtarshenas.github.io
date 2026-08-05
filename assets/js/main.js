@@ -102,6 +102,7 @@ function initPublications() {
               </div>`;
             list.appendChild(item);
           });
+        if (typeof initScrollReveal === "function") initScrollReveal();
       }
 
       if (filterBar) {
@@ -133,3 +134,33 @@ function initPublications() {
     });
 }
 document.addEventListener("DOMContentLoaded", initPublications);
+
+// ---------- Scroll-reveal ----------
+// Applies a gentle fade/slide-up to cards and list items as they enter the
+// viewport, across every page — no per-page markup needed.
+function initScrollReveal() {
+  const targets = document.querySelectorAll(
+    ".card, .project-card, .pub-item, .news-item, .teach-item, .contact-list li"
+  );
+  if (!targets.length) return;
+
+  targets.forEach((el, i) => {
+    el.classList.add("reveal");
+    el.style.transitionDelay = `${Math.min(i % 6, 5) * 60}ms`;
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  targets.forEach((el) => observer.observe(el));
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
