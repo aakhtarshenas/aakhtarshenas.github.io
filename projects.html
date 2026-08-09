@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — Azim Akhtarshenas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">Azim Akhtarshenas</a>
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="eyebrow">Projects</span>
+    <h1>Selected projects</h1>
+    <p class="lede">Hardware-validated systems and open research code.</p>
+  </div>
+
+  <svg class="waveform-divider" aria-hidden="true"></svg>
+
+  <section class="section" style="padding-top:20px;">
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-media">
+          <img src="assets/img/projects/drl-disaster-response.jpg" alt="UAV base stations providing communication coverage over a flood disaster-response area" onerror="this.parentElement.textContent='project image'; this.remove();" />
+        </div>
+        <div class="project-body">
+          <h3>Centralized PPO-Based DRL for Multi-UAV-BS Positioning and Trajectory Optimization</h3>
+          <div class="chip-row">
+            <span class="chip">PPO</span>
+            <span class="chip">TD3</span>
+            <span class="chip">Multi-UAV-BS positioning</span>
+            <span class="chip">Disaster response</span>
+          </div>
+          <p>A centralized PPO agent learns to position multiple UAV base stations in real time,
+            using only radio-sensing measurements (no GPS), to keep ground users connected as they
+            move — trained and evaluated across four user-mobility patterns.</p>
+          <div class="btn-row" style="margin-top:0;">
+            <a class="btn" href="https://github.com/aakhtarshenas/centralized-ppo-multi-uav-bs" target="_blank" rel="noopener">Code</a>
+            <a class="btn" href="paper-multi-uav-bs.html">Paper</a>
+            <a class="btn" href="gifs.html">GIF</a>
+            <a class="btn" href="presentation.html">Presentation</a>
+            <a class="btn" href="presentation/DRL_UAV_presentation.pptx">PowerPoint presentation</a>
+            <a class="btn" href="https://doi.org/10.5281/zenodo.20720697" target="_blank" rel="noopener">Dataset</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-media">
+          <img src="assets/img/projects/aoa-outdoor-setup.jpg" alt="Outdoor AoA measurement setup: fixed antenna array, USRP, and four labeled UE positions across a plaza" onerror="this.parentElement.textContent='project photo'; this.remove();" />
+        </div>
+        <div class="project-body">
+          <h3>SDR-Based Wireless Testbeds &amp; 5G NR AoA Estimation</h3>
+          <div class="chip-row">
+            <span class="chip">USRP B210</span>
+            <span class="chip">GNU Radio</span>
+            <span class="chip">OpenAirInterface</span>
+            <span class="chip">5G NR</span>
+            <span class="chip">AoA estimation</span>
+            <span class="chip">Indoor/Outdoor</span>
+          </div>
+          <p>Reproducible software-defined radio testbeds built on USRP hardware, GNU Radio, and
+            OpenAirInterface, used across the group's over-the-air experiments — including
+            angle-of-arrival estimation from 5G NR Sounding Reference Signals, validated with commercial
+            smartphones against a two-node USRP B210 receiver in both indoor and outdoor settings.</p>
+          <div class="btn-row" style="margin-top:0;">
+            <a class="btn" href="https://github.com/aakhtarshenas/aoa-5g-passive-srs" target="_blank" rel="noopener">Code</a>
+            <a class="btn" href="https://arxiv.org/abs/2608.00080" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-media">
+          <img src="assets/img/projects/imaging.jpg" alt="Image reconstruction" onerror="this.parentElement.textContent='project photo'; this.remove();" />
+        </div>
+        <div class="project-body">
+          <h3>Image Reconstruction</h3>
+          <div class="chip-row">
+            <span class="chip">Inverse problems</span>
+            <span class="chip">Deep learning</span>
+            <span class="chip">Medical imaging</span>
+          </div>
+          <p>Reconstruction algorithms combining classical sparse-recovery formulations with learned
+            priors, applied to under-sampled and noisy medical imaging data.</p>
+          <div class="btn-row" style="margin-top:0;">
+            <a class="btn" href="https://github.com/aakhtarshenas" target="_blank" rel="noopener">Code</a>
+            <a class="btn" href="publications.html">Paper</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> Azim Akhtarshenas · iTEAM Research Institute, UPV</div>
+    <div class="footer-links">
+      <a href="https://scholar.google.com/citations?user=5eCLyxwAAAAJ" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://github.com/aakhtarshenas" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/azim-akhtarshenas-8499a5163/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
