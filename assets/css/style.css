@@ -22,6 +22,9 @@
   --rose-wash: #f7e7ea;
   --sage: #47654a;
   --sage-deep: #324a34;
+  --tue-red: #d0202e;
+  --tue-red-wash: #fdecee;
+  --tue-red-line: rgba(208, 32, 46, 0.28);
   --sage-wash: #e9efe6;
   --shadow: 0 1px 2px rgba(64, 41, 63, 0.07), 0 8px 24px rgba(64, 41, 63, 0.07);
 
@@ -52,6 +55,9 @@ html[data-theme="dark"] {
   --rose-wash: #302127;
   --sage: #9dc2a0;
   --sage-deep: #c1ddc3;
+  --tue-red: #ff7a85;
+  --tue-red-wash: #3a1d22;
+  --tue-red-line: rgba(255, 122, 133, 0.35);
   --sage-wash: #1b2a1e;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
 }
@@ -315,6 +321,52 @@ html[data-theme="dark"] .hero-art { opacity: 0.16; }
   margin-bottom: 14px;
 }
 .hero .affil a { color: var(--ink-faint); text-decoration: underline; }
+
+/* ---------- Current position pill (TU/e research intern) ---------- */
+.hero .intern { margin: 8px 0 10px; }
+.hero .intern a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 5px 14px 5px 11px;
+  border: 1px solid var(--tue-red-line);
+  border-radius: 999px;
+  background: var(--tue-red-wash);
+  color: var(--tue-red);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hero .intern a:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px var(--tue-red-line);
+}
+.intern-dot {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--tue-red);
+  flex: none;
+}
+.intern-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--tue-red);
+  animation: intern-pulse 2.2s ease-out infinite;
+}
+@keyframes intern-pulse {
+  0%   { transform: scale(1);   opacity: 0.55; }
+  100% { transform: scale(2.8); opacity: 0; }
+}
+@media (max-width: 700px) {
+  .hero .intern a { font-size: 0.88rem; text-align: left; }
+}
 .tag-row {
   display: flex; flex-wrap: wrap; gap: 8px;
   margin-top: 12px;
