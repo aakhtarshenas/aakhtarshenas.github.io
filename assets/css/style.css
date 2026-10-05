@@ -743,7 +743,7 @@ html[data-theme="dark"] .hero-art { opacity: 0.16; }
   font-family: var(--font-body);
   font-size: 0.92rem;
   background: #fff;
-  color: var(--ink);
+  color: #241d29;
   box-sizing: border-box;
 }
 .contact-form-card textarea { resize: vertical; }
